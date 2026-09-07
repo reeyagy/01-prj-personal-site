@@ -2,10 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header keeps the site name and navigation together. -->
+  <header class="site-header">
+    <a class="logo" href="#top">Reeya Gyanmote<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero section: a short introduction and the main call to action. -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Computer Science and Engineering student</p>
+        <h1>Building thoughtful websites,<br><span>one project at a time.</span></h1>
+        <p class="hero-text">Hi! I'm Reeya, a CSE student with hands-on software engineering experience spanning full-stack web development, object-oriented design, and AI-assisted workflows.</p>
+        <a class="button" href="#projects">See my projects <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="scroll-note">Scroll to explore <span aria-hidden="true">↓</span></p>
+    </section>
+
+    <!-- Bio section: replace this text with your own story as you learn. -->
+    <section class="about section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A little about me</p>
+        <h2>Curious by nature.<br>Creative by practice.</h2>
+      </div>
+      <div class="about-content">
+        <img class="profile-photo" src="img/reeya.png" alt="Portrait of Reeya Gyanmote">
+        <div>
+          <p>I am currently studying CSE and enjoying the process of learning something new every day. I like solving problems, paying attention to details, and making websites that are easy for people to use.</p>
+          <p>This portfolio will grow with me as I practice HTML, CSS, Python, Java, C++, C#, C, and JavaScript. Thanks for stopping by and following along.</p>
+          <a class="text-link" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section: add or remove skills as your course continues. -->
+    <section class="skills section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">What I am learning</p>
+        <h2>My current toolkit.</h2>
+      </div>
+      <div class="skill-list">
+        <div class="skill-item"><span>01</span><i class="fa-brands fa-html5"></i><strong>HTML</strong><p>Clear, meaningful page structure</p></div>
+        <div class="skill-item"><span>02</span><i class="fa-brands fa-css3-alt"></i><strong>CSS</strong><p>Layouts, color, and responsive design</p></div>
+        <div class="skill-item"><span>03</span><i class="fa-brands fa-python"></i><strong>Python</strong><p>Programming fundamentals and data structures</p></div>
+        <div class="skill-item"><span>04</span><i class="fa-brands fa-java"></i><strong>Java</strong><p>Object-oriented programming and algorithms</p></div>
+        <div class="skill-item"><span>05</span><i class="fa-brands fa-cplusplus"></i><strong>C++</strong><p>Systems programming and performance optimization</p></div>
+        <div class="skill-item"><span>06</span><i class="fa-brands fa-dotnet"></i><strong>C#</strong><p>.NET development and enterprise applications</p></div>
+        <div class="skill-item"><span>07</span><i class="fa-brands fa-c"></i><strong>C</strong><p>Low-level programming and system design</p></div>
+        <div class="skill-item"><span>08</span><i class="fa-brands fa-js"></i><strong>JavaScript</strong><p>Interactive and useful experiences</p></div>
+      </div>
+    </section>
+
+    <!-- Projects section: replace the sample project text with your own work. -->
+    <section class="projects section" id="projects">
+      <div class="section-heading projects-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects in progress.</h2>
+        </div>
+        <p>Each project is a chance to learn, experiment, and make something a little better than the last.</p>
+      </div>
+      <div class="project-list">
+        <article class="project-card featured-project">
+          <img src="img/laptop.jpg" alt="A laptop with colorful lights">
+          <div class="project-info"><p class="project-number">01 / First project</p><h3>Personal Website</h3><p>A simple portfolio built with HTML and CSS to introduce my work and learning journey.</p><a class="text-link" href="#contact">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card simple-project"><p class="project-number">02 / Coming soon</p><h3>More ideas<br>on the way.</h3><p>New experiments will appear here as I continue through the course.</p><span class="project-arrow" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
+
+    <!-- Contact section: update the email address with your own address. -->
+    <section class="contact section" id="contact">
+      <!-- Email -->
+      <a class="contact-link" href="mailto:rgyanmot@gmail.com">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a class="contact-link" href="https://www.linkedin.com/in/reeya-gyanmote-138219357"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <!-- GitHub -->
+      <a class="contact-link" href="https://github.com/reeyagy" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+  </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Reeya Gyanmote</p>
+    <p>Designed and built while learning on the web.</p>
+  </footer>
 </body>
 </html>
