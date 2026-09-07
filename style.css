@@ -326,13 +326,13 @@ nav a:hover,
 .simple-project {
 	min-height: 300px;
 	padding: 38px;
-	background: var(--ink);
-	color: white;
+	background: #a8d8f0;
+	color: #000;
 }
 
 .simple-project p:not(.project-number) {
 	max-width: 240px;
-	color: #d6d3c6;
+	color: #000;
 }
 
 .project-arrow {
