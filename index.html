@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Instrument+Serif:ital@0;1&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-  <!-- The header keeps the site name and navigation together. -->
   <header class="site-header">
     <a class="logo" href="#top">Reeya Gyanmote<span>.</span></a>
     <nav aria-label="Main navigation">
@@ -19,27 +21,32 @@
     </nav>
   </header>
 
-  <main id="top">
-    <!-- Bio section: replace this text with your own story as you learn. -->
-    <section class="about section" id="about">
+  <main id="top" class="scrapbook-main">
+    <div class="doodle doodle-star" aria-hidden="true"></div>
+    <div class="doodle doodle-sparkle" aria-hidden="true"></div>
+
+    <section class="about section scrapbook-panel" id="about">
       <div class="section-heading">
         <p class="eyebrow">A little about me</p>
-        <h2>Welcome to Reeya's Portfolio!<br>
+        <h2>Welcome to Reeya's portfolio!</h2>
+        <p class="intro-line">I am currently studying CSE and enjoying the process of learning something new every day. I like solving problems, paying attention to details, and making websites that are easy for people to use.</p>
       </div>
       <div class="about-content">
-        <img class="profile-photo" id="profilePhoto" src="img/square.png" alt="Portrait of Reeya Gyanmote" tabindex="0" role="button" aria-label="Change profile photo">
-        <div>
-          <p>I am currently studying CSE and enjoying the process of learning something new every day. I like solving problems, paying attention to details, and making websites that are easy for people to use.</p>
-          <p>This portfolio will grow with me as I practice HTML, CSS, Python, Java, C++, C#, C, and JavaScript. Thanks for stopping by and following along.</p>
-          <a class="text-link" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+        <div class="photo-stack">
+          <div class="photo-polaroid">
+            <img class="profile-photo" id="profilePhoto" src="img/square.png" alt="Portrait of Reeya Gyanmote" tabindex="0" role="button" aria-label="Change profile photo">
+            <span class="polaroid-caption">click on the image!</span>
+          </div>
+          <div class="skills-bubble">
+            <a class="text-link" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+            <p class="bubble-copy">This portfolio will grow with me as I practice HTML, CSS, Python, Java, C++, C#, C, and JavaScript. Thanks for stopping by and following along.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills section: add or remove skills as your course continues. -->
     <section class="skills section" id="skills">
       <div class="section-heading">
-        <p class="eyebrow">What I am learning</p>
         <h2>My current toolkit.</h2>
       </div>
       <div class="skill-list">
@@ -54,7 +61,6 @@
       </div>
     </section>
 
-    <!-- Projects section: replace the sample project text with your own work. -->
     <section class="projects section" id="projects">
       <div class="section-heading projects-heading">
         <div>
@@ -90,23 +96,19 @@
       </div>
     </section>
 
-    <!-- Contact section: update the email address with your own address. -->
     <section class="contact section" id="contact">
-      <!-- Email -->
-      <a class="contact-link" href="mailto:rgyanmot@gmail.com">
-        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-      </a>
-      <!-- LinkedIn -->
-      <a class="contact-link" href="https://www.linkedin.com/in/reeya-gyanmote-138219357"
-         target="_blank"
-         rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <!-- GitHub -->
-      <a class="contact-link" href="https://github.com/reeyagy" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github" aria-hidden="true"></i>
-      </a>
-  </a>
+      <div class="contact-sticker">Say hi!</div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:rgyanmot@gmail.com">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/reeya-gyanmote-138219357" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="contact-link" href="https://github.com/reeyagy" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+      </div>
     </section>
   </main>
 
@@ -116,7 +118,6 @@
   </footer>
 
   <script>
-    // Change the profile photo when it is clicked or activated with the keyboard.
     const profilePhoto = document.getElementById("profilePhoto");
 
     function changeProfilePhoto() {
