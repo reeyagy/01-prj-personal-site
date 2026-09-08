@@ -27,7 +27,7 @@
         <h2>Welcome to Reeya's Portfolio!<br>
       </div>
       <div class="about-content">
-        <img class="profile-photo" src="img/reeya.png" alt="Portrait of Reeya Gyanmote">
+        <img class="profile-photo" id="profilePhoto" src="img/square.png" alt="Portrait of Reeya Gyanmote" tabindex="0" role="button" aria-label="Change profile photo">
         <div>
           <p>I am currently studying CSE and enjoying the process of learning something new every day. I like solving problems, paying attention to details, and making websites that are easy for people to use.</p>
           <p>This portfolio will grow with me as I practice HTML, CSS, Python, Java, C++, C#, C, and JavaScript. Thanks for stopping by and following along.</p>
@@ -114,5 +114,24 @@
     <p>© 2026 Reeya Gyanmote</p>
     <p>Designed and built while learning on the web.</p>
   </footer>
+
+  <script>
+    // Change the profile photo when it is clicked or activated with the keyboard.
+    const profilePhoto = document.getElementById("profilePhoto");
+
+    function changeProfilePhoto() {
+      profilePhoto.src = profilePhoto.src.includes("square.png")
+        ? "img/reeya.png"
+        : "img/square.png";
+    }
+
+    profilePhoto.addEventListener("click", changeProfilePhoto);
+    profilePhoto.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        changeProfilePhoto();
+      }
+    });
+  </script>
 </body>
 </html>
